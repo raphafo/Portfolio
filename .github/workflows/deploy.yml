@@ -15,6 +15,7 @@ jobs:
     - name: Configurer SSH
       run: |
         mkdir -p ~/.ssh
+        echo "Juste pour faire un test"
         echo "${{ secrets.SSH_PRIVATE_KEY }}"
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
