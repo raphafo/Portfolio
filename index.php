@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Numérique</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column header-show">
+    <i class="header-toggle d-xl-none bi bi-x"></i>
+  <div class="header-content">
+    <div class="profile-img">
+      <img src="assets/img/ingrid.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html">
+      <h1 class="sitename">Ingrid Raphaela</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Accueil</a></li>
+        <li><a href="#about" class=""><i class="bi bi-person navicon"></i> A propos de moi</a></li>
+        <li><a href="#resume" class=""><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="#portfolio" class=""><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="contact.html" class=""><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/imp.jpg" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h2>Ingrid Raphaela</h2>
+        <p>je suis <span class="typed" data-typed-items="Etudiante,developpeuse,Artisane du code"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>A propos de moi</h2>
+      </div>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/ing3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Etudiante &amp; Developpeuse</h2>
+            <p class="fst-italic py-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Date de naissance:</strong> <span>2 Mai 2001</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>email:</strong> <span>nkpweeingrid@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>telephone:</strong> <span>+23070110033</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>ville:</strong> <span>Quatre Bornes, saint jean</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Niveau:</strong> <span>BTS</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Étudiante en BTS SIO, je me forme au développement web et applicatif avec des langages comme Java, PHP, JavaScript, HTML/CSS. Curieuse et passionnée par le numérique, je développe des projets concrets pour progresser.
+              Mon objectif : devenir développeuse web full-stack et contribuer à des solutions innovantes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mon Parcours</h2>
+
+    <section id="resume" class="resume section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>BTS</h4>
+              <h5>2024- 2026</h5>
+              <p><em>Mcci businness school</em></p>
+              <p>Spécialité: Service Informatique et organisation</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor(1,2)</h4>
+              <h5>2022-2024</h5>
+              <p><em>École de commerce et de gestion d’entreprise, Yaoundé</em></p>
+              <p> Spécialité: Finance</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Licence(1,2)</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Université de Yaoundé I </em></p>
+              <p>Spécialité: Mathématique </p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title"> Projets Académiques et Personnels</h3>
+            <div class="resume-item">
+              <h4>Projet académiques</h4>
+              <h5>2025</h5>
+              <p><em>sites web</em></p>
+              <ul>
+                <li>création d'un site web de tutoriel</li>
+                <li>Création d'un site web de vente de voiture</li>
+                <li>création d'une interface utilisateur avec javafx</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>personnels</h4>
+              <h5>2025</h5>
+              <p><em>Application</em></p>
+              <ul>
+                <li>Creation d'une minie librairie </li>
+                <li>Creation d'un site de vente de Produits capillaires</li>
+                <li>En Apprentissage sur les frameworks</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>COMPETENCES</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>python</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SQL</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>java</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Postgre</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests section">
+
+      </div><!-- End Section Title -->
+      <section class="features-section py-5 text-white" style="background-color: #111;">
+        <div class="container">
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Domaines d'intéret</h2>
+            <p>
+            <div><span>Ce que</span> <span class="description-title">j'explore</span></div>
+          </p>
+          <div class="row g-4">
+            
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-hdd-network fs-2 text-primary"></i>
+                <h5 class="mt-3">Développement Back-End</h5>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-database fs-2 text-warning"></i>
+                <h5 class="mt-3">Bases de Données MySQL</h5>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-braces fs-2 text-info"></i>
+                <h5 class="mt-3">API RESTful</h5>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-shield-lock fs-2 text-danger"></i>
+                <h5 class="mt-3">Authentification & Sécurité</h5>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-diagram-3 fs-2 text-success"></i>
+                <h5 class="mt-3">Spring Boot</h5>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-code-slash fs-2 text-light"></i>
+                <h5 class="mt-3">PHP Dynamique</h5>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-exclamation-triangle fs-2 text-warning"></i>
+                <h5 class="mt-3">Gestion des erreurs</h5>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-arrow-repeat fs-2 text-info"></i>
+                <h5 class="mt-3">Requêtes AJAX</h5>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="bg-dark p-4 rounded text-center">
+                <i class="bi bi-layout-text-window fs-2 text-secondary"></i>
+                <h5 class="mt-3">Modularité du code</h5>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+    </section><!-- /Interests Section -->
+
+    <!-- Testimonials Section -->
+    <!-- /Resume Section -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mon Projet</h2>
+        <p>
+          <a href="http://localhost/Projet%20Supercar/index.html">Suivez ce lien Vers SuperCar</a>
+        </p>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Accueil</h4>
+                  <a href="assets/img/cap1.png" title="Page d'accueil" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap6.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Services</h4>
+                  <a href="assets/img/cap6.png" title="Services" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap4.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Demande d'essai</h4>
+                  <a href="assets/img/cap4.png" title="essai" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Catalogue</h4>
+                  <a href="assets/img/cap2.png" title="Voitures" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap7.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>contactez-Nous</h4>
+                  <a href="assets/img/cap7.png" title="Contact" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap5.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Reserver</h4>
+                  <a href="assets/img/cap5.png" title="Comment reserver" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap8.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Inscription</h4>
+                  <a href="assets/img/cap8.png" title="inscription" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap9.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>connexion</h4>
+                  <a href="assets/img/cap9.png" title="connexion" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/cap3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Catalogue</h4>
+                  <a href="assets/img/cap3.png" title="Catalogue" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+        </div>
+
+      </div>
+
+    </section>
+
+    </section>
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Adresse</h3>
+                <p>Saint jean,Quatre Bornes</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Appel</h3>
+                <p>+23070110033</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>nkpweeingrid@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Reseaux sociaux</h3>
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com/in/ingrid-nkpwe%27e-b30133329" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+      
+  </main>
+    
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+        <!-- Citation geek centrée -->
+        <p class="text-center mb-4">
+            <i class="bi bi-quote fs-4 text-muted"></i>
+            <em class="mx-2">En informatique, le problème est toujours entre la chaise et le clavier.</em>
+            <i class="bi bi-quote fs-4 text-muted flip-x"></i>
+        </p>
+
+        <!-- Réseaux sociaux -->
+        <div class="social-links d-flex justify-content-center mb-4">
+            <a href="#" class="mx-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <!-- Copyright - Version améliorée -->
+        <div class="copyright text-center">
+            <p class="mb-1">
+                <span>© 2024-2026 Étudiante à MCCI</span> | 
+                <strong>Ingrid Raphaela</strong> | 
+                <span>Tous droits réservés</span>
+            </p>
+            <p class="small text-muted mb-0">
+                Designed by <a href="https://bootstrapmade.com/" class="text-muted">BootstrapMade</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
