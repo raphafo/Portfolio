@@ -18,8 +18,8 @@ jobs:
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H 102.222.106.68 -p ${{secrets.SSH_PORT}} >> ~/.ssh/known_hosts
-        eval "$(ssh-agent -s)"
-        ssh-add ~/.ssh/id_rsa <<< "${{secrets.SSH_PASSPHRASE}}"
+        # eval "$(ssh-agent -s)"
+        # ssh-add ~/.ssh/id_rsa <<< "${{secrets.SSH_PASSPHRASE}}"
 
     - name: Déployer sur le serveur distant
       run: |
