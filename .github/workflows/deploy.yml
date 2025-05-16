@@ -23,4 +23,4 @@ jobs:
 
     - name: Déployer sur le serveur distant
       run: |
-        rsync -avz -p ${{secrets.SSH_PORT}} --delete ./ teamibfa@102.222.106.68:~/public_html
+        rsync -avz -e "ssh -p ${{secrets.SSH_PORT}}" --delete ./ teamibfa@102.222.106.68:~/public_html
