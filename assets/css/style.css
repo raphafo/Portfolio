@@ -10,7 +10,7 @@
   --text-dark: #4a4a4a;
   --text-muted: #6c757d;
   --white: #ffffff;
-  --gradient-primary: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, #e8c5e8 100%);
+  --gradient-primary: linear-gradient(135deg, #9b59b6 0%, #e8c5e8 100%);
   --gradient-card: linear-gradient(135deg, #ffffff 0%, #f8f5ff 100%);
   --shadow-light: 0 5px 15px rgba(155, 89, 182, 0.1);
   --shadow-medium: 0 10px 25px rgba(155, 89, 182, 0.15);
