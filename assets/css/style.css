@@ -167,7 +167,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.1;
 }
 
 .hero .container {
@@ -721,26 +720,7 @@ body {
   transform: translateY(0);
 }
 
-/* Skills animation trigger */
-.skills-animation .progress-bar {
-  width: 0;
-}
 
-.skills-animation.animate .progress-bar[aria-valuenow="100"] { 
-  width: 100%; 
-}
-.skills-animation.animate .progress-bar[aria-valuenow="80"] { 
-  width: 80%; 
-}
-.skills-animation.animate .progress-bar[aria-valuenow="75"] { 
-  width: 75%; 
-}
-.skills-animation.animate .progress-bar[aria-valuenow="70"] { 
-  width: 70%; 
-}
-.skills-animation.animate .progress-bar[aria-valuenow="60"] { 
-  width: 60%; 
-}
 
   /* MODÈLE 1: Cartes Hexagonales
         ======================================= */
