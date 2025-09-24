@@ -346,110 +346,326 @@
 
     </section><!-- /Interests Section -->
 
-    <!-- Testimonials Section -->
-    <!-- /Resume Section -->
-    <section id="portfolio" class="portfolio section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Mes Projets</h2>
-        <p>
-          <a href="http://localhost/Projet%20Supercar/index.html">Suivez ce lien Vers SuperCar</a>
-        </p>
-      </div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .portfolio-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .project-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+        
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .btn-primary-custom {
+            background-color: #3498db;
+            border-color: #3498db;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-custom {
+            border-color: #3498db;
+            color: #3498db;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-custom:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .project-features {
+            margin-top: 20px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            padding: 5px 0;
+            color: #5a6c7d;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: #2ecc71;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-links {
+                flex-direction: column;
+            }
+            
+            .btn-primary-custom, .btn-outline-custom {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
 
-      <div class="container">
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Mes Projets</h2>
+                <p>Découvrez mes réalisations principales avec leurs fonctionnalités et accès directs</p>
+            </div>
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Accueil</h4>
-                  <a href="assets/img/cap1.png" title="Page d'accueil" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <div class="row">
+                <!-- Projet SuperCar -->
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                        <h3 class="project-title">SuperCar - Location de voitures de luxe</h3>
+                        <p class="project-description">
+                            Plateforme complète de location de véhicules haut de gamme avec interface client et administration.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="http://localhost/Projet%20Supercar/index.html" class="btn btn-primary-custom">
+                                <i class="bi bi-eye-fill me-2"></i>Partie Client
+                            </a>
+                            <a href="http://localhost/Projet%20Supercar/admin" class="btn btn-outline-custom">
+                                <i class="bi bi-gear-fill me-2"></i>Partie Admin
+                            </a>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h5>Fonctionnalités principales :</h5>
+                            <ul class="feature-list">
+                                <li>Catalogue de voitures avec filtres avancés</li>
+                                <li>Système de réservation en ligne</li>
+                                <li>Gestion des demandes d'essai</li>
+                                <li>Espace client personnalisé</li>
+                                <li>Tableau de bord administrateur</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap6.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Services</h4>
-                  <a href="assets/img/cap6.png" title="Services" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+                <!-- Projet 2 -->
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Site e-commerce complet avec gestion des produits, panier et système de paiement.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary-custom">
+                                <i class="bi bi-eye-fill me-2"></i>Voir le projet
+                            </a>
+                            <a href="#" class="btn btn-outline-custom">
+                                <i class="bi bi-file-pdf me-2"></i>Documentation
+                            </a>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h5>Fonctionnalités principales :</h5>
+                            <ul class="feature-list">
+                                <li>Catalogue produits avec recherche</li>
+                                <li>Panier d'achat et commandes</li>
+                                <li>Système de paiement sécurisé</li>
+                                <li>Gestion des stocks</li>
+                                <li>Interface administrateur</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Stripe API</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap4.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Demande d'essai</h4>
-                  <a href="assets/img/cap4.png" title="essai" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+                <!-- Projet 3 -->
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h3 class="project-title">Application de Réservation</h3>
+                        <p class="project-description">
+                            Système de réservation en ligne pour professionnels avec gestion des créneaux horaires.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary-custom">
+                                <i class="bi bi-eye-fill me-2"></i>Voir le projet
+                            </a>
+                            <a href="#" class="btn btn-outline-custom">
+                                <i class="bi bi-file-pdf me-2"></i>Documentation
+                            </a>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h5>Fonctionnalités principales :</h5>
+                            <ul class="feature-list">
+                                <li>Calendrier interactif</li>
+                                <li>Gestion des disponibilités</li>
+                                <li>Notifications automatiques</li>
+                                <li>Tableau de bord professionnel</li>
+                                <li>Rapports et statistiques</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">WebSockets</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap2.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Catalogue</h4>
-                  <a href="assets/img/cap2.png" title="Voitures" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+                <!-- Projet 4 -->
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3 class="project-title">Tableau de Bord Analytics</h3>
+                        <p class="project-description">
+                            Solution de visualisation de données avec tableaux de bord interactifs et rapports personnalisés.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary-custom">
+                                <i class="bi bi-eye-fill me-2"></i>Voir le projet
+                            </a>
+                            <a href="#" class="btn btn-outline-custom">
+                                <i class="bi bi-file-pdf me-2"></i>Documentation
+                            </a>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h5>Fonctionnalités principales :</h5>
+                            <ul class="feature-list">
+                                <li>Visualisations de données interactives</li>
+                                <li>Rapports personnalisables</li>
+                                <li>Export de données multiples formats</li>
+                                <li>Alertes et notifications</li>
+                                <li>Interface responsive</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <span class="tech-badge">Angular</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">D3.js</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap7.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>contactez-Nous</h4>
-                  <a href="assets/img/cap7.png" title="Contact" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap5.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Reserver</h4>
-                  <a href="assets/img/cap5.png" title="Comment reserver" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap8.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Inscription</h4>
-                  <a href="assets/img/cap8.png" title="inscription" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap9.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>connexion</h4>
-                  <a href="assets/img/cap9.png" title="connexion" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/cap3.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Catalogue</h4>
-                  <a href="assets/img/cap3.png" title="Catalogue" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+            </div>
         </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
       </div>
 
