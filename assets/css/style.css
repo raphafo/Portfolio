@@ -581,14 +581,14 @@ background: var(--beige-light);
 }
 
 .btn-primary-custom {
-  background: var(--gradient-primary);
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 25px;
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 25px !important;
+  border-radius: 25px !important;
   transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
+  text-decoration: none !important;
+  display: inline-block !important;
   font-weight: 500;
 }
 
@@ -599,14 +599,14 @@ background: var(--beige-light);
 }
 
 .btn-outline-custom {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  padding: 8px 23px;
-  border-radius: 25px;
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  padding: 8px 23px !important;
+  border-radius: 25px !important;
   transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  background: transparent;
+  text-decoration: none !important;
+  display: inline-block !important;
+  background: transparent !important;
   font-weight: 500;
 }
 
