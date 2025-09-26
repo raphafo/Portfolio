@@ -420,7 +420,7 @@ background: var(--beige-light);
 
         .veille-section {
             padding: 80px 0;
-            background: linear-gradient(135deg, #802592 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #6f248c 0%, #2d2d2d 100%);
         }
 
         .section-title p {
