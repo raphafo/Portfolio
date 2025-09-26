@@ -1056,3 +1056,39 @@ background: var(--beige-light);
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
 }
+
+/* ========================================
+   Bootstrap Button Customization
+======================================== */
+.btn-outline-secondary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  border-radius: 25px !important;
+  padding: 8px 23px !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3);
+}
+
+.btn-primary {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 25px !important;
+  padding: 10px 25px !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3) !important;
+  color: white !important;
+}
