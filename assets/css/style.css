@@ -728,6 +728,10 @@ background: var(--beige-light);
   color: white;
   transform: translateY(-2px);
 }
+.tool-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
 
 /* ========================================
    Footer
