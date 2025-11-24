@@ -660,6 +660,21 @@ background: var(--beige-light);
   font-weight: 500;
 }
 
+/* GLPI Section Image */
+.glpi-card .glpi-img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.glpi-card {
+  text-align: center;
+}
+
 /* ========================================
    Contact Section
 ======================================== */
